@@ -64,14 +64,15 @@
 		저희의 결혼소식을 함께 기뻐해주시고 환영해주셔서 감사합니다.<br>
 		소중한 순간에 자리를 빛내주시길 바랍니다.<br>
                             감사합니다.<br>
-<a href="https://startbootstrap.com/theme/grayscale/">링크</a>
+		<a href="https://startbootstrap.com/theme/grayscale/">링크</a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Projects-->
-        <section class="projects-section " id="projects">
+        <section class="projects-section text-center bg-white" id="projects" style="width : 100%">
+            <div class="container" >
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" align="right" src="assets/img/portfolio/thumbnails/8.jpg" alt="..." /></div>
@@ -222,6 +223,8 @@
             </div>
         </div>
         <!-- Contact-->
+
+<div id="map" style="width:100%;height:400px;"></div>
         <section class="contact-section bg-black" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -243,7 +246,7 @@
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">예식장 전화번호</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black"><strong>042-334-1000</strong></div>
+                                <div class="small text-black" ><strong><a href ="tel:042-334-1000">042-334-1000</a></strong></div>
                             </div>
                         </div>
                     </div>
@@ -263,5 +266,42 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=uqbfus47kn"></script>
+
+<script>
+var mapOptions = {
+    center: new naver.maps.LatLng(35.854721, 128.482413),
+    zoom: 16
+};
+var map = new naver.maps.Map('map', mapOptions);
+ 
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(36.31993488549307, 127.40529710305233),
+    title: 'BMK웨딩홀 5층',
+    map: map
+});
+ 
+var contentString = [
+        '<div style="padding:4px 4px;">',
+        '   <div style="font-weight:bold;padding-bottom:3px;">BMK웨딩홀</div>',
+        '   <p>5층 하모니볼룸홀<p>',
+        '</div>'
+    ].join('');
+ 
+var infowindow = new naver.maps.InfoWindow({
+    content: contentString
+});
+ 
+naver.maps.Event.addListener(marker, "click", function(e) {
+    if (infowindow.getMap()) {
+        infowindow.close();
+    } else {
+        infowindow.open(map, marker);
+    }
+});
+ 
+infowindow.open(map, marker);
+</script>
+
     </body>
 </html>
