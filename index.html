@@ -241,7 +241,9 @@
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-0">BMK웨딩홀 5층</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black"><strong>대전 중구 서문로 133</strong></div>
+                                <div class="small text-black"><strong>대전 중구 서문로 133 </strong> 
+				    <button type="button" id = "copybtn" onclick="copyToClipboard("대전 중구 서문로 133");">주소복사</button>
+				</div>
                                 <div class="small text-black"><strong>지하철</strong>  서대전네거리역 3번 출구에서 677m</div>
                                 <div class="small text-black"><strong>기차</strong>  서대전역에서 도보 7분</div>
                             </div>
@@ -274,7 +276,8 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=uqbfus47kn"></script>
-		<script>
+
+<script>
 			var mapOptions = {
     center: new naver.maps.LatLng(36.31993488549307,127.40529710305233),
     zoom: 14
@@ -307,7 +310,19 @@ naver.maps.Event.addListener(marker, "click", function(e) {
 });
  
 infowindow.open(map, marker);
-
-		</script>
+	
+	function copyToClipboard(val){
+		var t = document.createElement("textarea");
+		document.body.appendChild(t);
+		t.value = val;
+		t.select();
+		document.execCommand('copy');
+		document.body.removechild(t);
+	}
+	$('copybtn').click(function(){
+		copyToClipboard('대전 중구 서문로 133');
+		alert('주소를 복사했습니다.');
+	});
+</script>
     </body>
 </html>
