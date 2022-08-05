@@ -80,11 +80,7 @@
   }
 }
 
-@font-face{
- font-family : 'NanumDaSiSiJagHae';
- src: url('./assets/font/NanumDaSiSiJagHae.ttf')
- format('ttf');
-}
+
 
 body {
   margin: 0;
