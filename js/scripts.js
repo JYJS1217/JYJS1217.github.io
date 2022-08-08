@@ -61,11 +61,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     
     
-    var dday = new Date(2022,12,17);
+    var dday = new Date(2022,11,17);
     var today = new Date();
     var gap = dday.getTime() - today.getTime();
     var result= Math.ceil(gap /(1000*60*60*24));
 
-    document.getElementById("count").innerHTML= "오늘은 "+today+" D-day 까지" +result + "일 남았습니다."
+    document.getElementById("count").innerHTML= "D-day 까지" +result + "일 남았습니다."
 });
 
