@@ -242,8 +242,8 @@
                                 <h4 class="text-uppercase m-0">BMK웨딩홀 5층</h4>
                                 <hr class="my-4 mx-auto" />
                                 <div class="small text-black">
-				    <input  style= "border : none; outline: none; text-align : center; font-size : 12px;" value = "대전 중구 서문로 133" readonly>
-				    <button type="button"  onclick="copyToClipboard(event);">주소복사</button>
+				    <input id="myInput" style= "border : none; outline: none; text-align : center; font-size : 12px;" value = "대전 중구 서문로 133" readonly>
+				    <button type="button"  onclick="copyToClipboard();">주소복사</button>
 				</div>
                                 <div class="small text-black"><strong>지하철</strong>  서대전네거리역 3번 출구에서 677m</div>
                                 <div class="small text-black"><strong>기차</strong>  서대전역에서 도보 7분</div>
@@ -312,10 +312,9 @@ naver.maps.Event.addListener(marker, "click", function(e) {
  
 infowindow.open(map, marker);
 	
-function copyToClipboard(event){
-	var copyText = event.target.parentNode.previousElementSibling;
+function copyToClipboard(){
+	var copyText = document.getElementById("myInput");
 	copyText.select();
-	copyText.setSelectionRange(0,99999);
 	document.execCommand("Copy");
 	alert('주소가 복사되었습니다.');		
 }
