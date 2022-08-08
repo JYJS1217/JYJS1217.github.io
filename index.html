@@ -324,6 +324,11 @@ function copyToClipboard(){
 	document.execCommand("Copy");
 	alert('주소가 복사되었습니다.');		
 }
+
+// 안드로이드 우측 버튼 비활성
+    $(document).bind("contextmenu", function (e) {
+        return false;
+    });
 </script>
     </body>
 </html>
