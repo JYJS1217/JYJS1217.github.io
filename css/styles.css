@@ -66,6 +66,10 @@
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
+  --js-concept-yellow: #F5F0BB;
+  --js-concept-lightgreen: #C4DFAA;
+  --js-concept-green: #90C8AC;
+  --js-concept-blue: #73A9AD;
 }
 
 *,
