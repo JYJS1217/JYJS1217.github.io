@@ -11644,7 +11644,10 @@ body {
   margin-bottom: 5rem;
   color : #73A9AD;
 }
-
+.about-section h2 {
+  margin-bottom: 5rem;
+  color : #73A9AD;
+}
 .projects-section {
  width: 80%;
   padding: 10rem 0;
