@@ -11616,12 +11616,14 @@ body {
   .masthead h1, .masthead .h1 {
     font-size: 2rem;
     line-height: 4rem;
+    background-size: cover;
   }
 }
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
+    background-size: cover;
   }
   .masthead h1, .masthead .h1 {
     font-size: 3rem;
