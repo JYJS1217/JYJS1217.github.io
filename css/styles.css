@@ -11788,5 +11788,46 @@ padding : 4px;
   pointer-events : none;
 }
 
+main {
+	font-family: Helvetica, sans-serif;
+	color: #fff;
+	padding: 2em;
+	width: 75%;
+	min-height: 100vh;
+	margin: 0 auto 0 auto; 
+}
+video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -9999;
+	transform: translateX(-50%) 
+translateY(-50%);
+	background: #000; }
+.overlay span{
+	position: relative;
+	opacity: 0;
+	top: 1em;
+	animation: animateOverlay 1s ease-in-
+out forwards;
+}
+.overlay span:nth-child(4n) { animation-delay: 
+0s; }
+.overlay span:nth-child(4n+1) { animation-
+delay: 1s; }
+.overlay span:nth-child(4n+3) { animation-
+delay: 2s; }
+.overlay span:nth-child(4n+2) { animation-
+delay: 3s; }
+@keyframes animateOverlay {
+  to {
+opacity: 1;
+top: 0;
+} }
+
+
+
 
 
