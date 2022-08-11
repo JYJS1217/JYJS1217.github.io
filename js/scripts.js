@@ -68,8 +68,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
     document.getElementById("count").innerHTML= "결혼식까지 " +result + "일 남았습니다!" ;
 
-});
-
+    
+    
+    
+    
+    
+    
+       // Sakura function.
 (function ($) {
     // requestAnimationFrame Polyfill
     (function () {
@@ -100,7 +105,7 @@ window.addEventListener('DOMContentLoaded', event => {
             };
     }());
 
-    // Sakura function.
+
     $.fn.sakura = function (options) {
         // We rely on these random values a lot, so define a helper function for it.
         function getRandomInt(min, max) {
@@ -200,4 +205,14 @@ window.addEventListener('DOMContentLoaded', event => {
     };
 }(jQuery));
 
+    
+    
+    
+    
+    
+    
+    
+    
+});
+ 
 
