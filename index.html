@@ -25,8 +25,8 @@
 	<meta property="og:description" content="2022년 12월 17일">
 	<meta property="og:image" content= "assets/img/portfolio/thumbnails/10.jpg">
 	
-	 <script type="text/javascript"> $(document).bind("contextmenu", function (e) {return false; });</script>
-
+	<script type="text/javascript"> $(document).bind("contextmenu", function (e) {return false; });</script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     </head>
 
@@ -54,12 +54,6 @@
 	    
         <!-- Masthead-->
         <header class="masthead">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
-$(window).load(function () {
-    $('body').sakura();
-});
-</script>
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
@@ -339,7 +333,11 @@ function copyToClipboard(){
 }
 
 
-     // Sakura function.
+     // Sakura function.	
+$(window).load(function () {
+    $('body').sakura();
+});	
+
 (function ($) {
     // requestAnimationFrame Polyfill
     (function () {
@@ -395,7 +393,8 @@ function copyToClipboard(){
         var defaults = {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
-            fallSpeed: 3,
+            //fallSpeed: 3,
+		fallSpeed: 10,
             maxSize: 14,
             minSize: 9,
             newOn: 300,
@@ -470,7 +469,7 @@ function copyToClipboard(){
     };
 }(jQuery));
 
-	    	
+	
 	
 </script>
 
