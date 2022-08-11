@@ -26,6 +26,8 @@
 	<meta property="og:image" content= "assets/img/portfolio/thumbnails/10.jpg">
 	
 	 <script type="text/javascript"> $(document).bind("contextmenu", function (e) {return false; });
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </script>
     </head>
 
@@ -330,8 +332,17 @@ function copyToClipboard(){
 	document.execCommand("Copy");
 	alert('주소가 복사되었습니다.');		
 }
+
+	
+	//sakura
+$(window).load(function () {
+    $('body').sakura();
+});
+
+	    	
+	
 </script>
-	    
+
 	    
 
     </body>
