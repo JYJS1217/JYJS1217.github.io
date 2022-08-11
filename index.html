@@ -237,7 +237,7 @@
         <!-- Contact-->
 
         <!-- <div id="map" style="width:80%; height:300px; padding : 5px; margin : 5px; text-align : center; " align ="center"></div>-->
-	<div id="map" class = "justify-content-center" style="height:300px; "></div>
+	<div id="map" class = "justify-content-center" style="width:80%; height:200px; "></div>
 	    
         <section class="contact-section" id="signup" style = "background-color : #90C8AC;">
             <div class="container px-4 px-lg-5">
@@ -294,7 +294,7 @@ var map = new naver.maps.Map('map', mapOptions);
  
 var marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(36.31993488549307, 127.40529710305233),
-    title: 'BMK웨딩홀 5층',
+    //title: 'BMK웨딩홀 5층',
     map: map
 });
  
@@ -306,7 +306,7 @@ var contentString = [
     ].join('');
  
 var infowindow = new naver.maps.InfoWindow({
-    content: contentString
+   // content: contentString
 });
  
 naver.maps.Event.addListener(marker, "click", function(e) {
