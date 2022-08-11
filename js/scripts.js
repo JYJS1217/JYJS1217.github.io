@@ -67,10 +67,10 @@ window.addEventListener('DOMContentLoaded', event => {
     var result= Math.ceil(gap /(1000*60*60*24));
 
     document.getElementById("count").innerHTML= "결혼식까지 " +result + "일 남았습니다!"
-    
-    
-    
-    (function ($) {
+
+});
+
+(function ($) {
     // requestAnimationFrame Polyfill
     (function () {
         var lastTime = 0;
@@ -199,7 +199,5 @@ window.addEventListener('DOMContentLoaded', event => {
         requestAnimationFrame(petalCreator);
     };
 }(jQuery));
-
-});
 
 
