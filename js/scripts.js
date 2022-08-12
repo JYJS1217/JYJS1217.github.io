@@ -131,9 +131,9 @@ window.addEventListener('DOMContentLoaded', event => {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
             //fallSpeed: 3,
-	    fallSpeed: 0.5,
-            maxSize: 18,
-            minSize: 12,
+	    fallSpeed: 0.8,
+            maxSize: 16,
+            minSize: 9,
             newOn: 900,
             //swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
 		swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5']
