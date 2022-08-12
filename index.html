@@ -74,11 +74,11 @@
             <div class="container px-4 px-lg-5" >
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-			 <h2 class="text-black-20 mb-4"><storng>드리는 말씀</strong></h3>
+			 <h2 class="text-black-20 mb-4"><strong>드리는 말씀</strong></h3>
 			 <p class="text-black-20" style="font-size:80%">
                            함께 해온 8년간의 연애를 마치고 드디어 결혼합니다.<br>
-		저희의 결혼소식을 함께 기뻐해주시고 환영해주셔서 감사합니다.<br>
-		소중한 순간에 자리를 빛내주시길 바랍니다.<br>
+		저희의 결혼소식을 같이 기뻐해주시고 환영해주셔서 감사합니다.<br>
+		소중한 순간에 함 자리를 빛내주시길 바랍니다.<br>
                             감사합니다.<br>
                         </p>
                     </div>
@@ -95,9 +95,9 @@
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center ">
-			<h4 class="text-black">주영</h4>
-                                    <p class="mb-0 text-black-50">노명균 조인하 장녀</p>
-			<p class="mb-0 text-black">밝고 행복한 미소로 따듯한 가정을 만들겠습니다.</p>
+					<p class="mb-0 text-black-50" style= "margin-top : 5px, margin-bottom : 5px">노명균 조인하 장녀</p>
+					<h4 class="text-black"><strong>주영</strong></h4>              
+					<p class="mb-0 text-black">밝고 행복한 미소로<br>따듯한 가정을 만들겠습니다.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -111,9 +111,9 @@
                         <div class="bg-white text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center ">
-                                    <h4 class="text-black">진성</h4>
-                                    <p class="mb-0 text-black-50">문상규 김민영 장남</p>
-				    <p class="mb-0 text-black">흔들림없는 든든한 버팀목으로 가정을 지키겠습니다.</p>
+                                    	<p class="mb-0 text-black-50" style= "margin-top : 5px, margin-bottom : 5px">문상규 김민영 장남</p>
+					<h4 class="text-black"><strong>진성</strong></h4> 
+				   	 <p class="mb-0 text-black">흔들림없는 든든한 버팀목으로<br>가정을 지키겠습니다.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -335,139 +335,7 @@ function copyToClipboard(){
 }
 
 
-     // Sakura function.	
-
-(function ($) {
-    // requestAnimationFrame Polyfill
-    (function () {
-        var lastTime = 0;
-        var vendors = ['ms', 'moz', 'webkit', 'o'];
-
-        for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-            window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
-            window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
-        }
-
-        if (!window.requestAnimationFrame)
-            window.requestAnimationFrame = function (callback, element) {
-                var currTime = new Date().getTime();
-                var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-                var id = window.setTimeout(function () {
-                        callback(currTime + timeToCall);
-                    },
-                    timeToCall);
-                lastTime = currTime + timeToCall;
-
-                return id;
-            };
-
-        if (!window.cancelAnimationFrame)
-            window.cancelAnimationFrame = function (id) {
-                clearTimeout(id);
-            };
-    }());
-
-
-    $.fn.sakura = function (options) {
-        // We rely on these random values a lot, so define a helper function for it.
-        function getRandomInt(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
-
-        // Helper function to attach cross-browser events to an element.
-        var prefixes = ['moz', 'ms', 'o', 'webkit', ''];
-        var prefCount = prefixes.length;
-
-        function prefixedEvent(element, type, callback) {
-            for (var i = 0; i < prefCount; i++) {
-                if (!prefixes[i]) {
-                    type = type.toLowerCase();
-                }
-
-                element.get(0).addEventListener(prefixes[i] + type, callback, false);
-            }
-        }
-
-        // Defaults for the option object, which gets extended below.
-        var defaults = {
-            blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
-            className: 'sakura',
-            //fallSpeed: 3,
-		fallSpeed: 1,
-            maxSize: 14,
-            minSize: 9,
-            newOn: 600,
-            //swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
-		swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5']
-        };
-
-        var options = $.extend({}, defaults, options);
-
-        // Declarations.
-        var documentHeight = $(document).height();
-        var documentWidth = $(document).width();
-        var sakura = $('<div class="' + options.className + '" />');
-
-        // Set the overflow-x CSS property on the body to prevent horizontal scrollbars.
-        $('body').css({ 'overflow-x': 'hidden' });
-
-        // Function that inserts new petals into the document.
-        var petalCreator = function () {
-            setTimeout(function () {
-                requestAnimationFrame(petalCreator);
-            }, options.newOn);
-
-            // Get one random animation of each type and randomize fall time of the petals.
-            var blowAnimation = options.blowAnimations[Math.floor(Math.random() * options.blowAnimations.length)];
-            var swayAnimation = options.swayAnimations[Math.floor(Math.random() * options.swayAnimations.length)];
-            var fallTime = (Math.round(documentHeight * 0.007) + Math.random() * 5) * options.fallSpeed;
-
-            var animations = 'fall ' + fallTime + 's linear 0s 1' + ', ' +
-                blowAnimation + ' ' + (((fallTime > 30 ? fallTime : 30) - 20) + getRandomInt(0, 20)) + 's linear 0s infinite' + ', ' +
-                swayAnimation + ' ' + getRandomInt(2, 4) + 's linear 0s infinite';
-            var petal = sakura.clone();
-            var size = getRandomInt(options.minSize, options.maxSize);
-            var startPosLeft = Math.random() * documentWidth - 100;
-            var startPosTop = -((Math.random() * 20) + 15);
-
-            // Apply Event Listener to remove petals that reach the bottom of the page.
-            prefixedEvent(petal, 'AnimationEnd', function () {
-                $(this).remove();
-            });
-
-            // Apply Event Listener to remove petals that finish their horizontal float animation.
-            prefixedEvent(petal, 'AnimationIteration', function (ev) {
-                if ($.inArray(ev.animationName, options.blowAnimations) != -1) {
-                    $(this).remove();
-                }
-            });
-
-            petal
-                .css({
-                    '-webkit-animation': animations,
-                    '-o-animation': animations,
-                    '-ms-animation': animations,
-                    '-moz-animation': animations,
-                    animation: animations,
-                    height: size,
-                    left: startPosLeft,
-                    'margin-top': startPosTop,
-                    width: size
-                })
-                .appendTo('body');
-        };
-
-
-        // Recalculate documentHeight and documentWidth on browser resize.
-        $(window).resize(function () {
-            documentHeight = $(document).height();
-            documentWidth = $(document).width();
-        });
-
-        // Finally: Start adding petals.
-        requestAnimationFrame(petalCreator);
-    };
-}(jQuery));
+   
 
 	
 	
