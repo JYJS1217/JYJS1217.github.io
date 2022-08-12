@@ -131,7 +131,7 @@ window.addEventListener('DOMContentLoaded', event => {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
             //fallSpeed: 3,
-	    fallSpeed: 1,
+	    fallSpeed: 0.5,
             maxSize: 16,
             minSize: 10,
             newOn: 900,
