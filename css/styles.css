@@ -11673,7 +11673,7 @@ body {
 }
 .about-section p {
   margin-bottom: 5rem;
-  line-height : 0.5em;
+  line-height : 1.5rem;
 }
 .about-section h2 {
   margin-bottom: 5rem;
@@ -11748,7 +11748,7 @@ text-align: center;
   letter-spacing: 0.15rem;
   //color : #000;
   color : #392f31;
-  line-height : 0.5em;
+  line-height : 1.5rem;
 }
 .contact-section .card h3, .contact-section .card .h3 {
   font-size: 1.2rem;
