@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
     
     
-    var dday = new Date(2022,7,16);
+    var dday = new Date(2022,11,17);
     var today = new Date();
     var gap = dday.getTime() - today.getTime();
     var result= Math.ceil(gap /(1000*60*60*24));
