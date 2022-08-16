@@ -19,7 +19,7 @@
   --bs-orange: #fd7e14;
   --bs-yellow: #e4c662;
   --bs-green: #67c29c;
-  --bs-teal: #fff;
+  --bs-teal: #000;
   --bs-cyan: #1cabc4;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -33,7 +33,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #fff;
+  --bs-primary: #000;
   --bs-secondary: #7464a1;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
@@ -11718,7 +11718,7 @@ text-align: center;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  color : #fff;
+  color : #000;
 }
 .contact-section .card hr {
   border-color: #F5F0BB;
