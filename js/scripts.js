@@ -66,7 +66,9 @@ window.addEventListener('DOMContentLoaded', event => {
     var gap = dday.getTime() - today.getTime();
     var result= Math.ceil(gap /(1000*60*60*24));
 
-    document.getElementById("count").innerHTML= "결혼식까지 " +result + "일 남았습니다!" ;
+	
+    if (result ==0 ) {document.getElementById("count").innerHTML= "2022.12.17 D-day";};
+    if (result !=0) {document.getElementById("count").innerHTML= "2022.12.17 D-" +result;} ;
 
     
     
