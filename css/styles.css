@@ -11718,6 +11718,7 @@ text-align: center;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   letter-spacing: 0.15rem;
+  color : #fff;
 }
 .contact-section .card hr {
   border-color: #F5F0BB;
