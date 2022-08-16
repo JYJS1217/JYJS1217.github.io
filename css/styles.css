@@ -248,7 +248,8 @@ sup {
 }
 
 a {
-  color: #F5F0BB;
+  //color: #F5F0BB;
+  color: #000;
   text-decoration: underline;
 }
 a:hover {
@@ -11742,6 +11743,7 @@ text-align: center;
 }
 .contact-section .social a:active {
   color: #fff;
+  //color: #000;
 }
 
 .footer {
