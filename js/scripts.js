@@ -67,8 +67,8 @@ window.addEventListener('DOMContentLoaded', event => {
     var result= Math.ceil(gap /(1000*60*60*24));
 
 	
-    if (result ==0 ) {document.getElementById("count").innerHTML= "2022.12.17   D-day";};
-    if (result !=0) {document.getElementById("count").innerHTML= "2022.12.17   D-" +result;} ;
+    if (result ==0 ) {document.getElementById("count").innerHTML= "D-day";};
+    if (result !=0) {document.getElementById("count").innerHTML= "D-" +result;} ;
 
     
     
