@@ -11711,7 +11711,7 @@ text-align: center;
 }
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #F5F0BB;
 }
 .contact-section .card h4, .contact-section .card .h4 {
   font-size: 0.8rem;
@@ -11720,7 +11720,7 @@ text-align: center;
   letter-spacing: 0.15rem;
 }
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #F5F0BB;
   border-width: 0.25rem;
   width: 3rem;
 }
