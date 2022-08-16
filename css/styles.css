@@ -11705,7 +11705,7 @@ text-align: center;
 
 .contact-section {
   padding-top: 5rem;
-  background: linear-gradient(to bottom,  #FFF 0%, rgba(245, 240, 187, 0.5) 20%, rgba(245, 240, 187,1) 100%);
+  background: linear-gradient(to bottom,  #FFF 0%, rgba(245, 240, 187, 0.7) 5%, rgba(245, 240, 187,1) 100%);
 }
 .contact-section .card {
   border: 0;
