@@ -11853,9 +11853,8 @@ text-align: center;
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
   
-  height: 15px;
 }
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1700px;
