@@ -11535,14 +11535,14 @@ body {
   //color: #F5F0BB;
   //border: 1px solid #F5F0BB;
   color: #81c147;
-  border: 1px solid #81c147; 
+  border: 0.25px solid #81c147; 
 }
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
-#mainNav .navbar-brand {
+#mainNav .navbar-brand {  //2022.12.17
   color: #000;
-  font-weight: 700;
+  font-weight: 500;
   padding: 0.9rem 0;
 }
 #mainNav .navbar-nav .nav-item:hover {
@@ -11600,7 +11600,7 @@ body {
     color: #81c147;
     outline: none;
    // border-bottom: 0.25rem solid #F5F0BB;
-    border-bottom: 0.15rem solid #81c147;
+    border-bottom: 0.25rem solid #81c147;
   }
 }
 
