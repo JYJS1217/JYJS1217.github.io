@@ -11703,7 +11703,7 @@ body {
   font-size: 1.2rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.4rem;
   color : #392f31;
   line-height : 1.5rem;
 }
@@ -11731,7 +11731,7 @@ text-align: center;
   font-size: 0.8rem;
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.4rem;
   //color : #000;
   color : #392f31;
   line-height : 1.5rem;
