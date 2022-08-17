@@ -11520,7 +11520,7 @@ body {
 
 #mainNav {
   min-height: 1rem;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.4);
   
   font-color : color : #392f31;
   font-size: 1rem;
@@ -11600,7 +11600,7 @@ body {
     color: #81c147;
     outline: none;
    // border-bottom: 0.25rem solid #F5F0BB;
-    border-bottom: 0.25rem solid #81c147;
+    border-bottom: 0.15rem solid #81c147;
   }
 }
 
@@ -11851,6 +11851,8 @@ text-align: center;
 
 .footer {
   padding: 5rem 0;
+  
+  height: 25px;
 }
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1700px;
