@@ -11515,6 +11515,8 @@ er,
 html {
   over-flow-x :  hidden;
   scroll-padding-top: calc(4.5rem - 1px);
+  -ms-content-zooming: none;
+-ms-touch-action: pan-x pan-y;
 }
 
 body {
