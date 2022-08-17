@@ -90,7 +90,7 @@
 body {
   overflow-x: hidden;
   margin: 0;
-  width:100%
+//  width:100%
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
@@ -102,7 +102,8 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout:none;
   
-  
+    width: 1120px;
+  max-width: none !important;
 }
 
 hr {
