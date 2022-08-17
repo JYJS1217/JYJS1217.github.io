@@ -11892,8 +11892,8 @@ text-align : center;
   text-align : center;
 }
 #portfolio .portfolio-box .img-fluid{
-border-radius: 20px;
-padding : 4px;
+border-radius: 10px;
+padding : 3px;
   pointer-events : none;
 }
 
