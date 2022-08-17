@@ -11519,7 +11519,7 @@ body {
 }
 
 #mainNav {
-  min-height: 2.5rem;
+  min-height: 1rem;
   background-color: rgba(255,255,255,0.5);
   
   font-color : color : #392f31;
