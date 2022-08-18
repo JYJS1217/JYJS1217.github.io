@@ -315,15 +315,17 @@
             <div class="container px-4 px-lg-5" >
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-			 <h4 class="text-black mb-4"><storng>마음 전하실 곳</storng></h4>
-			 <h4 class="text-black mb-4"><storng>노주영</storng></h4> 
-				<i class="fas fa-solid fa-solid fa-phone" href ="tel:010-5153-3240"></i>
-				<input id="myInput" style= "border : none; outline: none; text-align : center; font-size : 15px;" value = "110410425880" readonly>
-				<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard();"></i> 
-			 <h4 class="text-black mb-4"><storng>문진성</storng></h4> 
-				<i class="fas fa-solid fa-solid fa-phone" href ="tel:010-2674-8129"></i>
-				<input id="myInput" style= "border : none; outline: none; text-align : center; font-size : 15px;" value = "110410425880" readonly>
-				<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard();"></i> 
+			<h4 class="text-black mb-4"><storng>마음 전하실 곳</storng></h4>
+			<h4 class="text-black mb-4"><storng>노주영</storng></h4> 
+			<h4 class="text-black mb-4">연락하기</h4> 
+			<i class="fas fa-solid fa-solid fa-phone" href="tel:010-5153-3240"></i>
+			<input id="myInput2" style= "border : none; outline: none; text-align : center; font-size : 15px;" value = "110410425880" readonly>
+			<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();"></i> 
+			<h4 class="text-black mb-4"><storng>문진성</storng></h4> 
+			<h4 class="text-black mb-4">연락하기</h4> 
+			<i class="fas fa-solid fa-solid fa-phone" href ="tel:010-2674-8129"></i>
+			<input id="myInput3" style= "border : none; outline: none; text-align : center; font-size : 15px;" value = "110410425880" readonly>
+			<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard3();"></i> 
                     </div>
                 </div>
             </div>
@@ -384,7 +386,19 @@ function copyToClipboard(){
 	var copyText = document.getElementById("myInput");
 	copyText.select();
 	document.execCommand("Copy");
-	alert('복사되었습니다.');		
+	alert('주소가 복사되었습니다.');		
+}
+	function copyToClipboard2(){
+	var copyText = document.getElementById("myInput2");
+	copyText.select();
+	document.execCommand("Copy");
+	alert('계좌번호가 복사되었습니다.');		
+}
+	function copyToClipboard3(){
+	var copyText = document.getElementById("myInput3");
+	copyText.select();
+	document.execCommand("Copy");
+	alert('계좌번호가 복사되었습니다.');		
 }
 
 </script>
