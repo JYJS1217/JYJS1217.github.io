@@ -11883,7 +11883,11 @@ text-align: center;
   line-height: 1.5rem;
 }
 
-
+.call-section hr{
+  border-color: #F5F0BB;
+  border-width: 0.25rem;
+  width: 3rem;
+}
 
 
 .footer {
