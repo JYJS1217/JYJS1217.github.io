@@ -1,0 +1,52 @@
+
+<div>
+<a href=#none id="show" onclick="if(hide.style.display=='none') {hide.style.display='';show.innerText='▲접기'} else {hide.style.display='none';show.innerText='▶펼치기'}">▶펼치기</a>
+<div id="hide" style="display: none">
+펼치면 보이는 내용을 적어줍니다. <br />
+아무 내용이나 적어주세요. <br />
+</div>
+</div>
+
+
+
+
+
+
+
+<h4 style = "text-align : left; margin-bottom : 1em ">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>
+	<tr>
+	    <td><h3><strong>노주영</strong></h3></td>
+	    <td></td>
+	</tr>
+	<tr>
+	    <td>신부에게 연락하기</td>
+	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></h3></td>
+	</tr>
+	<tr>
+	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
+	</tr>
+    </table>
+</h4>
+			    <br>
+<h4 style = "text-align : left; margin-bottom : 1em ">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>		
+	<tr>
+	    <td><h3><strong>문진성</strong></h3></td>
+	    <td></td>
+	</tr>
+	<tr>
+	    <td>신랑에게 연락하기</td>
+	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'"></i></h3></td>
+	</tr>
+	<tr>
+	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
+	</tr>
+    </table>
+</h4>
