@@ -276,28 +276,21 @@
 					<i class="fas fa-solid fa-copy text-primary " onclick="copyToClipboard();"></i> 
 				    <!-- <button type="button"  style="background-color : #F5F0BB; font-style: normal; color : black-10; font-size : 12px; border : none; outline: none;" onclick="copyToClipboard();">주소복사</button>-->
 				</div>
-				<div id="map" class="container" style="width:100%; height:200px; margin-top : 8px; margin-bottom : 8px;"></div>
-                                <!--
-				<h4 class="mt-2 " style = "text-align : left;"><strong>지하철</strong> </h4>
-				<span  style = "text-align : left;"> 서대전네거리역 3번 출구에서 677m</span>
-                                <h4 class="mt-2 " style = "text-align : left;"><strong>기차</strong></h4>
-				<span style = "text-align : left;"> 서대전역에서 도보 7분</span>	
-    				 -->
-				    
-				    <h4>
-				        <table border="0"  align = "center">
-	<th> </th>
-	<th></th>
-	<tr>
-	    <td>지하철</td>
-	    <td>서대전네거리역 3번 출구에서 677m</td>
-	</tr>
-	<tr>
-	    <td>기차</td>
-	    <td>서대전역에서 도보 7분</td>
-	</tr>
-    </table>
-					    </h4>
+				<div id="map" class="container" style="width:100%; height:200px; margin-top : 8px; margin-bottom : 8px;"></div> 
+				<h4 style = "text-align : left;">
+					<table border="0"  align = "center">
+						<th></th>
+						<th></th>
+						<tr>
+	    						<td><strong>지하철</strong></td>
+	    						<td>서대전네거리역 3번 출구에서 677m</td>
+						</tr>
+						<tr>
+	    						<td><strong>기차</strong><</td>
+	    						<td>서대전역에서 도보 7분</td>
+						</tr>
+					</table>
+				</h4>
                             </div>
                         </div>
                     </div>
@@ -335,26 +328,38 @@
                     <div class="col-lg-8">
 			<i class="fas fa-solid fa-heart text-primary mb-2"></i><br>
 			<h3 class="text-black mb-4"><storng>마음 전하실 곳</storng></h3>
-			<h3 class="text-black mt-4 text-center"><storng>노주영</storng></h3> 
-			<div class="col-lg-8 text-center px-4">
-				<h4 class="text-black mb-4 text-left" style = "float: left;">연락하기</h4> 
-				<i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" style = "float: right;"></i>
-				<h4 class="text-black mb-4 text-left">
-					<input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly>
-					<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i> 
-				</h4>	
-			</div>
 
-			<h3 class="text-black mt-4 text-center"><storng>문진성</storng></h3> 
-			<div class="col-lg-8 text-center px-4">
-				<h4 class="text-black mb-4 text-left" style = "float: left;">연락하기</h4> 
-				<i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" style = "float: right;"></i>
-				<h4 class="text-black mb-4 text-left"> 
-					<input id="myInput3" style= "border : none; outline: none;" value = "110 410 425880" readonly>
-					<i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard3();" style = "float: right;"></i> 
-				</h4>
-				
-			</div>
+<h4 style = "text-align : left;">  
+  <table border="0">
+	<th> </th>
+	<th></th>
+	<tr>
+	    <td><storng>노주영</storng></td>
+	    <td></td>
+	</tr>
+	<tr>
+	    <td>연락하기</td>
+	    <td><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></td>
+	</tr>
+	<tr>
+	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
+	    <td><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></td>
+	</tr>
+	<tr>
+	    <td><storng>문진성</storng></td>
+	    <td></td>
+	</tr>
+	<tr>
+	    <td>연락하기</td>
+	    <td><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'"></i></td>
+	</tr>
+	<tr>
+	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
+	    <td><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></td>
+	</tr>
+    </table>
+</h4>
+			    
                     </div>
                 </div>
             </div>
