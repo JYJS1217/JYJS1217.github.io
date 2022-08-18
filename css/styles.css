@@ -11864,6 +11864,7 @@ text-align: center;
   letter-spacing: 0.2rem;
   //color : #000;
   color : #392f31;
+  line-height: 2rem;
 }
 .call-section h4{
   font-size: 0.8rem;
@@ -11871,6 +11872,7 @@ text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   color : #000;
+  line-height: 1.5rem;
 }
 .call-section input{
   font-size: 0.8rem;
@@ -11878,6 +11880,7 @@ text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   color : #000;
+  line-height: 1.5rem;
 }
 
 
