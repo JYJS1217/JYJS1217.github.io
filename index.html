@@ -336,25 +336,25 @@
 	<th></th>
 	<tr>
 	    <td><h3>신랑측</h3></td>
-	    <td><h3 style = "float: right;"><a id="show" onclick="dis()">▼</a></h3></td>
+	    <td><h3 style = "float: right;"><a id="show" onclick="dis2('#dis'); dis('#dis1');">▼</a></h3></td>
 	</tr>
 	<tr id="dis" style="display: none;">
 	    <td>신랑 문진성 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
 	</tr>
-	<tr id="dis" style="display: none;">
+	<tr id="dis1" style="display: none;">
 	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
 	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
 	</tr>
 	<tr>
 	    <td><h3>신부측</h3></td>
-	    <td><h3 style = "float: right;"><a id="show" onclick="dis()">▼</a></h3></td>
+	    <td><h3 style = "float: right;"><a id="show" onclick="dis2('#di2'); dis('#dis3');">▼</a></h3></td>
 	</tr>
-	<tr id="dis" style="display: none;">
+	<tr id="dis2" style="display: none;">
 	    <td>신부 노주영 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></h3></td>
 	</tr>
-	<tr id="dis" style="display: none;">
+	<tr id="dis3" style="display: none;">
 	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
 	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
 	</tr>
@@ -443,6 +443,14 @@ function dis(){
       $('#dis').show();
     }else{
       $('#dis').hide();
+    }
+ }
+	
+function dis2(var tmp){
+   if($(tmp).css('display') == 'none'){
+      $(tmp).show();
+    }else{
+      $(tmp).hide();
     }
  }
 
