@@ -339,10 +339,22 @@
 	    <td>
 
 <div>
-<a href=#none id="show" onclick="if(hide.style.display=='none'){hide.style.display=''; show.innerText='▲'} else{hide.style.display='none'; show.innerText='▼'}" 
- style="text-decoration: none;">▼</a>
-<div id="hide"  style="display: none;"> 
-TEST
+<a id='show' onclick="dis()">▼</a>
+<div id="dis"> 
+<h4 style = "text-align : left; margin-bottom : 1em ;">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>
+	<tr>
+	    <td>신랑 문진성 </td>
+	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
+	</tr>
+	<tr>
+	    <td>신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
+	</tr>
+    </table>
+</h4>
 </div>
 </div>
 
@@ -453,6 +465,15 @@ function copyToClipboard(){
 	document.execCommand("Copy");
 	alert('계좌번호가 복사되었습니다.');		
 }
+	
+	
+function dis(){
+      if($('#dis').css('display') == 'none'){
+      $('#dis').show();
+    }else{
+      $('#dis').hide();
+    }
+ }
 
 </script>
 
