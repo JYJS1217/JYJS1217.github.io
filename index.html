@@ -385,7 +385,7 @@
         <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=uqbfus47kn"></script>
 
 <script>
-			var mapOptions = {
+var mapOptions = {
     center: new naver.maps.LatLng(36.31993488549307,127.40529710305233),
     zoom: 14
 };
@@ -440,7 +440,7 @@ function copyToClipboard(){
 }
 	
 	
-function dis(){
+function dis3(){
       if($('#dis').css('display') == 'none'){
       $('#dis').show();
     }else{
@@ -448,13 +448,19 @@ function dis(){
     }
  }
 	
-function dis2(tmp){
+function dis1(tmp){
    if($(tmp).css('display') == 'none'){
-      $(tmp).slideDown(400);
+      $(tmp).slideDown();
     }else{
-      $(tmp).slideUp(400);
+      $(tmp).slideUp();
     }
  }
+	
+ $( document ).ready( function() {
+        $( 'a.' ).click( function() {
+          $(tmp).slideToggle();
+        } );
+ } );
 
 </script>
 
