@@ -362,22 +362,20 @@
     </table>
 </h4>
 			    
-<div  class="bride2">
-<h4  style = "text-align : center; margin-bottom : 0.5em;">  
+<h4  class="bride2" style = "text-align : center; margin-bottom : 0.5em; display:none;">  
   <table border="0"  align = "center">
 	<th></th>
 	<th></th>
-	<tr style="background-color : #C4DFAA;; border : none;">
+	<tr >
 	    <td style = "float: left;">신부 노주영 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></h3></td>
 	</tr>
-	<tr style="background-color : #C4DFAA;; border : none;">
-	    <td style = "float: left;">신한은행 <input id="myInput2" style= "border : none; outline: none; background-color : #C4DFAA;;" value = "110 410 123456" readonly></td>
+	<tr>
+	    <td style = "float: left;">신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 123456" readonly></td>
 	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
 	</tr>
     </table>
 </h4>
- </div>
 			    
 			    
 
@@ -484,7 +482,7 @@ function dis1(tmp){
 	
 
 $( 'a.bride' ).click( function() {
-	$('div.bride2').slideToggle();
+	$('h4.bride2').slideToggle();
 });
 
 </script>
