@@ -105,6 +105,9 @@ body {
   max-width:767px;
   align: center;
 }
+.inner {
+  width: 800px;margin:0 auto;
+}
 
 hr {
   margin: 1rem 0;
