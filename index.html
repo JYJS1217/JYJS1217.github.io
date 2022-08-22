@@ -333,20 +333,20 @@
 	<th></th>
 	<tr>
 	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신랑측</h3></td>
-	    <td><a id="show" onclick="dis2('#dis'); dis2('#dis1');">▼</a></td>
+	    <td><a class="groom" style = "text-decoration: none;">▼</a></td>
 	</tr>
     </table>
 </h4>
-<h4 style = "text-align : center; margin-bottom : 0.5em;">  
+<h4 class="groom2" style = "text-align : center; margin-bottom : 0.5em;">  
   <table border="0"  align = "center">
 	<th></th>
 	<th></th>
-	<tr id="dis" style="display: none;background-color : #C4DFAA;; border : none;">
+	<tr>
 	    <td style = "float: left;">신랑 문진성 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
 	</tr>
-	<tr id="dis1" style="display: none;background-color : #C4DFAA;; border : none;">
-	    <td style = "float: left; ">신한은행 <input id="myInput2" style= "border : none; outline: none; background-color : #C4DFAA;;" value = "110 410 425880" readonly></td>
+	<tr>
+	    <td style = "float: left; ">신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
 	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
 	</tr>
     </table>
@@ -456,30 +456,9 @@ function copyToClipboard(){
 	alert('계좌번호가 복사되었습니다.');		
 }
 	
-	
-function dis3(){
-      if($('#dis').css('display') == 'none'){
-      $('#dis').show();
-    }else{
-      $('#dis').hide();
-    }
- }
-	
-function dis1(tmp){
-   if($(tmp).css('display') == 'none'){
-      $(tmp).slideDown();
-    }else{
-      $(tmp).slideUp();
-    }
- }
-
-	
- function dis2(tmp){
-	 console.log("hey1");
-   $(tmp).slideToggle(500);
-	  console.log("hey2");
- } 
-	
+$( 'a.groom' ).click( function() {
+	$('h4.groom2').slideToggle();
+});
 
 $( 'a.bride' ).click( function() {
 	$('h4.bride2').slideToggle();
