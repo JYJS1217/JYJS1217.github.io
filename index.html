@@ -331,33 +331,35 @@
 	</tr>
     </table>
 </h4>
-<h4 class="groom2" style = "text-align : center; margin-bottom : 0.5em; display:none;">  
+<h4 class="groom2" style = "text-align : center; display:none;">  
   <table border="0"  align = "center">
 	<th></th>
 	<th></th>
 	<tr>
 	    <td style = "float: left;"><strong>신랑</strong>&nbsp;문진성</td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
-	</tr>
+	</tr> 
 	<tr>
-	    <td style = "float: left; ">신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 123456" readonly></td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
+	    <td style = "float: left; ">신한은행 110 410 123456</td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 123456');" style = "float: right;"></i></h3></td>
 	</tr>
+	  <hr> 
 	<tr>
 	    <td style = "float: left;"><strong>아버지</strong>&nbsp;문상규</td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
 	</tr>
 	<tr>
 	    <td style = "float: left; ">신한은행 110 410 000000</td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard4('110 410 000000');" style = "float: right;"></i></h3></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 000000');" style = "float: right;"></i></h3></td>
 	</tr>
+	  <hr> 
 	<tr>
 	    <td style = "float: left;"><strong>어머니</strong>&nbsp;김민영</td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
 	</tr>
 	<tr>
 	    <td style = "float: left; ">신한은행 110 410 000001</td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard4('110 410 000001');" style = "float: right;"></i></h3></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 000001');" style = "float: right;"></i></h3></td>
 	</tr>
     </table>
 </h4>
@@ -372,7 +374,7 @@
     </table>
 </h4>
 			    
-<h4  class="bride2" style = "text-align : center; margin-bottom : 0.5em; display:none;">  
+<h4  class="bride2" style = "text-align : center; display:none;">  
   <table border="0"  align = "center">
 	<th></th>
 	<th></th>
@@ -381,24 +383,26 @@
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></h3></td>
 	</tr>
 	<tr>
-	    <td style = "float: left;">신한은행 <input id="myInput3" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard3();" style = "float: right;"></i></h3></td>
+	    <td style = "float: left;">신한은행 110 410 425880</td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 425880');" style = "float: right;"></i></h3></td>
 	</tr>
+	  <hr> 
 	<tr>
 	    <td style = "float: left;"><strong>아버지</strong>&nbsp;노명균</td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-8523-3240'" ></i></h3></td>
 	</tr>
 	<tr>
 	    <td style = "float: left; ">신한은행 110 410 000003</td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard4('110 410 000003');" style = "float: right;"></i></h3></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 000003');" style = "float: right;"></i></h3></td>
 	</tr>
+	  <hr> 
 	<tr>
 	    <td style = "float: left;"><strong>어머니</strong>&nbsp;조인하</td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2234-3240'" ></i></h3></td>
 	</tr>
 	<tr>
 	    <td style = "float: left; ">신한은행 110 410 000004</td>
-	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard4('110 410 000004');" style = "float: right;"></i></h3></td>
+	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2('110 410 000004');" style = "float: right;"></i></h3></td>
 	</tr>
     </table>
 </h4>
@@ -472,19 +476,7 @@ function copyToClipboard(){
 	document.execCommand("Copy");
 	alert('주소가 복사되었습니다.');		
 }
-function copyToClipboard2(){
-	var copyText = document.getElementById("myInput2");
-	copyText.select();
-	document.execCommand("Copy");
-	alert('계좌번호가 복사되었습니다.');		
-}
-function copyToClipboard3(){
-	var copyText = document.getElementById("myInput3");
-	copyText.select();
-	document.execCommand("Copy");
-	alert('계좌번호가 복사되었습니다.');		
-}	
-function copyToClipboard4(val) {
+function copyToClipboard2(val) {
     var t = document.createElement("textarea");
     document.body.appendChild(t);
     t.value = val;
