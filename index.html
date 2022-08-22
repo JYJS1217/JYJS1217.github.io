@@ -481,9 +481,13 @@ function dis1(tmp){
  } 
 	
 $( document ).ready( 
+	console.log("hey1");
 	function() {
+		console.log("hey2");
 		$( 'a.bride' ).click( function() {
+			console.log("hey3");
 			$('table.dis2').slideToggle(500);
+			console.log("hey4");
         } );
 } );
 </script>
