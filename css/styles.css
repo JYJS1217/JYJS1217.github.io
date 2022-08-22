@@ -6441,7 +6441,7 @@ text-align : center;
   -webkit-touch-callout:none;
   //
   border-style: dotted;
-  border-width: 0.5px;
+  border-width: 5px;
   border-color: rgba(244, 98, 58, 0.9);
   border-radius: 10px;
 }
