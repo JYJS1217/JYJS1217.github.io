@@ -357,12 +357,12 @@
 	<th></th>
 	<tr>
 	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신부측</h3></td>
-	    <td><a class="bride">▼</a></td>
+	    <td><a class="bride" style = "border : none;">▼</a></td>
 	</tr>
     </table>
 </h4>
-<h4 style = "text-align : center; margin-bottom : 0.5em;">  
-  <table id="dis2" border="0"  align = "center">
+<h4 class="bride2" style = "text-align : center; margin-bottom : 0.5em;">  
+  <table border="0"  align = "center">
 	<th></th>
 	<th></th>
 	<tr style="display: none;background-color : #C4DFAA;; border : none;">
@@ -474,22 +474,19 @@ function dis1(tmp){
  }
 
 	
- function dis3(tmp){
+ function dis2(tmp){
 	 console.log("hey1");
    $(tmp).slideToggle(500);
 	  console.log("hey2");
  } 
 	
-$( document ).ready( 
-	
-	function() {
-		console.log("hey1");
-		$( 'a.bride' ).click( function() {
-			console.log("hey3");
-			$('table.dis2').slideToggle(500);
-			console.log("hey4");
-        } );
-} );
+
+$( 'a.bride' ).click( function() {
+	console.log("hey3");
+	$('h4.bride2').slideToggle(500);
+	console.log("hey4");
+}
+
 </script>
 
 	    
