@@ -73,24 +73,6 @@ window.addEventListener('DOMContentLoaded', event => {
     
 	
 
-function copyToClipboard(){
-	var copyText = document.getElementById("myInput");
-	copyText.select();
-	document.execCommand("Copy");
-	alert('주소가 복사되었습니다.');		
-}
-function copyToClipboard2(){
-	var copyText = document.getElementById("myInput2");
-	copyText.select();
-	document.execCommand("Copy");
-	alert('계좌번호가 복사되었습니다.');		
-}
-function copyToClipboard3(){
-	var copyText = document.getElementById("myInput3");
-	copyText.select();
-	document.execCommand("Copy");
-	alert('계좌번호가 복사되었습니다.');		
-}
 	
 $( 'a.groom' ).click( function() {
 	$('h4.groom2').slideToggle();
