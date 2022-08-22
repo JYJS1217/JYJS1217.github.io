@@ -335,9 +335,16 @@
 	<th></th>
 	<th></th>
 	<tr>
-	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신랑측 <a id="show" onclick="dis2('#dis'); dis2('#dis1');dis2('#dis0');">▼</a></h3></td>
-	    <td>&nbsp;</td>
+	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신랑측</h3></td>
+	    <td><a id="show" onclick="dis2('#dis'); dis2('#dis1');">▼</a></td>
 	</tr>
+    </table>
+</h4>
+<br>
+<h4 style = "text-align : center; margin-bottom : 1em; background-color : #F5F0BB; border-radius : 10%;">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>
 	<tr id="dis" style="display: none;">
 	    <td style = "float: left;">신랑 문진성 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-2674-8129'" ></i></h3></td>
@@ -346,12 +353,22 @@
 	    <td style = "float: left;">신한은행 <input id="myInput2" style= "border : none; outline: none;" value = "110 410 425880" readonly></td>
 	    <td><h3><i class="fas fa-solid fa-copy text-primary" onclick="copyToClipboard2();" style = "float: right;"></i></h3></td>
 	</tr>
-	<tr id="dis0" style="display: none;"><td>&nbsp;</td><td>&nbsp;</td>
-	</tr>
+    </table>
+</h4>
+<h4 style = "text-align : center; margin-bottom : 1em ">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>
 	<tr>
-	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신부측 <a id="show" onclick="dis2('#dis2'); dis2('#dis3');">▼</a></h3></td>
-	    <td>&nbsp;</td>
+	    <td><h3 style = "font-family: 'MaruBuri'; font-size : 15pt;">신부측</h3></td>
+	    <td><a id="show" onclick="dis2('#dis2'); dis2('#dis3');">▼</a></td>
 	</tr>
+    </table>
+</h4>
+<h4 style = "text-align : center; margin-bottom : 1em; background-color : #F5F0BB; border-radius : 10%;">  
+  <table border="0"  align = "center">
+	<th></th>
+	<th></th>
 	<tr id="dis2" style="display: none;">
 	    <td style = "float: left;">신부 노주영 </td>
 	    <td><h3><i class="fas fa-solid fa-solid fa-phone" onclick="document.location.href='tel:010-5153-3240'" ></i></h3></td>
@@ -362,6 +379,10 @@
 	</tr>
     </table>
 </h4>
+			    
+			    
+			    
+
 
 			    
                     </div>
@@ -458,7 +479,7 @@ function dis1(tmp){
 
 	
  function dis2(tmp){
-   $(tmp).slideToggle();
+   $(tmp).slideToggle(800);
  } 
 
 </script>
