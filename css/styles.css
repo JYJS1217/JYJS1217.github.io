@@ -6525,7 +6525,10 @@ a.button {
 .button > span {
   vertical-align: middle;
 }
-
+.bg-1 .button {
+  color: #37474f;
+  border-color: #37474f;
+}
 .bg-2 .button {
   color: #ECEFF1;
   border-color: #ECEFF1;
