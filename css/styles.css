@@ -319,6 +319,8 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+  //
+  padding : 10px;
 }
 
 label {
