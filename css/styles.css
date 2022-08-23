@@ -6578,6 +6578,8 @@ button.button--winona {
   transition: border-color 0.3s, background-color 0.3s;
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  
+  display: block;
 }
 button.button--winona::after {
   content: attr(data-text);
@@ -6591,17 +6593,28 @@ button.button--winona::after {
   color: #3fb576;
   -webkit-transform: translate3d(0, 25%, 0);
   transform: translate3d(0, 25%, 0);
+  
+    padding: 1em 2em;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+/*
 button.button--winona > span {
   display: block;
 }
+*/
 button.button--winona.button--inverted {
   //color: #7986cb;
   color: #7986cb;
 }
 button.button--winona.button--inverted:after {
   color: #fff;
+  
+  
 }
+/*
 button.button--winona::after,
 button.button--winona > span {
   padding: 1em 2em;
@@ -6610,10 +6623,15 @@ button.button--winona > span {
   -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
+*/
 button.button--winona:hover {
   //border-color: #3f51b5;
   border-color: #3fb576;
   background-color: rgba(63, 81, 181, 0.1);
+  
+    opacity: 0;
+  -webkit-transform: translate3d(0, -25%, 0);
+  transform: translate3d(0, -25%, 0);
 }
 button.button--winona.button--inverted:hover {
  // border-color: #21333C;
@@ -6626,11 +6644,13 @@ button.button--winona:hover::after {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
+/*
 button.button--winona:hover > span {
   opacity: 0;
   -webkit-transform: translate3d(0, -25%, 0);
   transform: translate3d(0, -25%, 0);
 }
+*/
 
 
 
