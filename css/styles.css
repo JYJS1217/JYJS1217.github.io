@@ -6500,24 +6500,19 @@ a.button {
   box-shadow: 0px 0px 0px 0px #007144;
 }
 
+
+
+
 //button winona
 /* Box colors */
 .bg-1 {
   background: #ECEFF1;
   color: #37474f;
 }
-.bg-2 {
-  background: #7986cb;
-  color: #ECEFF1;
-}
-.bg-3 {
-  background: #37474f;
-  color: #fff;
-}
 
 /* Common button styles */
 button.button {
-//  float: left;
+/*float: left;*/
   min-width: 150px;
   max-width: 250px;
   display: block;
@@ -6544,11 +6539,6 @@ button.button > span {
   color: #37474f;
   border-color: #37474f;
 }
-.bg-2 .button {
-  color: #ECEFF1;
-  border-color: #ECEFF1;
-}
-
 
 /* Sizes */
 button.button--size-s {
