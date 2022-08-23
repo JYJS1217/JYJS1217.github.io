@@ -6489,7 +6489,7 @@ a.button {
 }
 .btnBlueGreen {
   //background: #00AE68; //밝은거
-  background : #30BA51;
+  background : #30BA51; 
 }
 .btnBlueGreen.btnPush {
   //box-shadow: 0px 5px 0px 0px #007144; //진한거
