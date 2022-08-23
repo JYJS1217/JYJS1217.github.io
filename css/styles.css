@@ -6619,6 +6619,7 @@ button.button--winona > span {
 button.button--winona:hover {
   //border-color: #3f51b5;
   border-color: #3FB576;
+  color : #3FB576;
   background-color: rgba(63, 81, 181, 0.1);
 }
 button.button--winona.button--inverted:hover {
