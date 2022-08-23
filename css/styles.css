@@ -6548,53 +6548,29 @@ a.button {
   color: #ECEFF1;
   border-color: #ECEFF1;
 }
-.bg-3 .button {
-  color: #fff;
-  border-color: #fff;
-}
+
 
 /* Sizes */
 .button--size-s {
   font-size: 14px;
 }
-.button--size-m {
-  font-size: 16px;
-}
-.button--size-l {
-  font-size: 18px;
-}
+
 
 /* Typography and Roundedness */
 .button--text-upper {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.button--text-thin {
-  font-weight: 300;
-}
-.button--text-medium {
-  font-weight: 500;
-}
+
 .button--text-thick {
   font-weight: 600;
 }
-.button--round-s {
-  border-radius: 5px;
-}
-.button--round-m {
-  border-radius: 15px;
-}
+
 .button--round-l {
   border-radius: 40px;
 }
 
 /* Borders */
-.button--border-thin {
-  border: 1px solid;
-}
-.button--border-medium {
-  border: 2px solid;
-}
 .button--border-thick {
   border: 3px solid;
 }
