@@ -6516,7 +6516,7 @@ a.button {
 }
 
 /* Common button styles */
-.button {
+button.button {
   float: left;
   min-width: 150px;
   max-width: 250px;
@@ -6532,10 +6532,10 @@ a.button {
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.button:focus {
+button.button:focus {
   outline: none;
 }
-.button > span {
+button.button > span {
   vertical-align: middle;
 }
 
