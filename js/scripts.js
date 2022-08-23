@@ -82,7 +82,7 @@ $( 'a.bride' ).click( function() {
 	$('h4.bride2').slideToggle();
 });
 $( 'a.callmember' ).click( function() {
-	$('p.callmember2').slideToggle();
+	$('h4.callmember2').slideToggle();
 });
     
     
