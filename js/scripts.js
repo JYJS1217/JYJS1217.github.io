@@ -81,7 +81,7 @@ $( 'a.groom' ).click( function() {
 $( 'a.bride' ).click( function() {
 	$('h4.bride2').slideToggle();
 });
-$( 'a.callmember' ).click( function() {
+$( 'button.callmember' ).click( function() {
 	$('h4.callmember2').slideToggle();
 });
     
