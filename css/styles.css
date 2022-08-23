@@ -6474,7 +6474,7 @@ a.button {
   display: block;
   position: relative;
   float: center;
-  width: 80px;
+  width: auto;
   padding: 0;
   margin: 5px 10px 5px 0;
   font-weight: 400;
