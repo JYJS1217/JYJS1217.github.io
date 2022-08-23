@@ -6476,20 +6476,22 @@ a.button {
   float: center;
   width: auto;
   padding: 0;
-  margin: 5px 10px 5px 0;
-  font-weight: 400;
+  margin: 0;
+  font-weight: 600;
   text-align: center;
-  line-height: 30px;
+  line-height: 20px;
   color: #FFF;
   border-radius: 10px;
   transition: all 0.2s ;
   text-decoration: none;
 }
 .btnBlueGreen {
-  background: #00AE68;
+  //background: #00AE68; //밝은거
+  background : #30ba51;
 }
 .btnBlueGreen.btnPush {
-  box-shadow: 0px 5px 0px 0px #007144;
+  //box-shadow: 0px 5px 0px 0px #007144; //진한거
+  box-shadow: 0px 5px 0px 0px #01781e;
 }
 .btnPush:hover {
   margin-top: 10px;
@@ -6497,18 +6499,20 @@ a.button {
 }
 
 .btnBlueGreen.btnPush:hover {
-  box-shadow: 0px 0px 0px 0px #007144;
+  //box-shadow: 0px 0px 0px 0px #007144; //진한거
+  box-shadow: 0px 0px 0px 0px #01781e;
 }
 
 
 
 
 //button winona
-/* Box colors */
+/* Box colors 
 .bg-1 {
   background: #ECEFF1;
   color: #37474f;
 }
+*/
 
 /* Common button styles */
 button.button {
@@ -6520,10 +6524,10 @@ button.button {
   padding: 1em 2em;
   border: none;
   background: none;
-  color: inherit;
-  vertical-align: middle;
+  color: inherit; //부모객체의 색깔 그대로
+  vertical-align: middle; //세로로 가운데
   position: relative;
-  z-index: 1;
+  z-index: 1; //요소를 겹치게 놓을 수 있음
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -6534,11 +6538,12 @@ button.button > span {
   vertical-align: middle;
 }
 
-/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari)
 .bg-1 .button {
   color: #37474f;
   border-color: #37474f;
 }
+ */
 
 /* Sizes */
 button.button--size-s {
@@ -6582,7 +6587,8 @@ button.button--winona::after {
   top: 0;
   left: 0;
   opacity: 0;
-  color: #3f51b5;
+  //color: #3f51b5;
+  color: #3fb576;
   -webkit-transform: translate3d(0, 25%, 0);
   transform: translate3d(0, 25%, 0);
 }
@@ -6590,6 +6596,7 @@ button.button--winona > span {
   display: block;
 }
 button.button--winona.button--inverted {
+  //color: #7986cb;
   color: #7986cb;
 }
 button.button--winona.button--inverted:after {
@@ -6604,12 +6611,15 @@ button.button--winona > span {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 button.button--winona:hover {
-  border-color: #3f51b5;
+  //border-color: #3f51b5;
+  border-color: #3fb576;
   background-color: rgba(63, 81, 181, 0.1);
 }
 button.button--winona.button--inverted:hover {
-  border-color: #21333C;
-  background-color: #21333C;
+ // border-color: #21333C;
+ // background-color: #21333C;
+  border-color: #213c2a;
+  background-color: #213c2a;
 }
 button.button--winona:hover::after {
   opacity: 1;
