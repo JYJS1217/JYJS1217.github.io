@@ -81,6 +81,13 @@ $( 'a.groom' ).click( function() {
 $( 'a.bride' ).click( function() {
 	$('h4.bride2').slideToggle();
 });
+$( 'button.groom' ).click( function() {
+	$('h4.groom2').slideToggle();
+});
+
+$( 'button.bride' ).click( function() {
+	$('h4.bride2').slideToggle();
+});
 $( 'button.callmember' ).click( function() {
 	$('h4.callmember2').slideToggle();
 });
