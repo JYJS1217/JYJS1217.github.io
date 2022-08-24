@@ -6526,7 +6526,7 @@ button.button {
   max-width: 350px;
   display: block;
   margin: 1em;
-  padding: 1em 2em;
+  padding: 1em 1em;
   border: none;
   background: none;
   //color: inherit; //부모객체의 색깔 그대로
