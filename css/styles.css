@@ -6534,7 +6534,7 @@ button.button {
   border-color: #37474f;
   vertical-align: middle; //세로로 가운데
   position: relative;
-  z-index: 1; //요소를 겹치게 놓을 수 있음
+  //z-index: 1; //요소를 겹치게 놓을 수 있음
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -6599,7 +6599,6 @@ button.button--winona > span {
 }
 button.button--winona.button--inverted {
   color: #7986cb;
-  z-index: 2; //요소를 겹치게 놓을 수 있음
 }
 button.button--winona.button--inverted:after {
   color: #fff;
