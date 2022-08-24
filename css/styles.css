@@ -6519,7 +6519,7 @@ a.button {
 ///////////////////////////////////////////////////////////////////
 //button winona
 /* Common button styles */
-button.button--winona {
+.button--winona {
   min-width: 150px;
   max-width: 350px;
   display: block;
