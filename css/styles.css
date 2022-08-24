@@ -6599,6 +6599,7 @@ button.button--winona > span {
 }
 button.button--winona.button--inverted {
   color: #7986cb;
+  z-index: 2; //요소를 겹치게 놓을 수 있음
 }
 button.button--winona.button--inverted:after {
   color: #fff;
