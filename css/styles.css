@@ -6519,24 +6519,23 @@ a.button {
 ///////////////////////////////////////////////////////////////////
 //button winona
 /* Common button styles */
-.button--winona {
+.winona {
   min-width: 150px;
   max-width: 350px;
-  display: block;
   margin: 1em;
   padding: 1em 2em;
-  border: none;
   background: none;
-  color: #392f31; //부모객체의 색깔 그대로
+  color: #392f31; 
   border-color: #392f31;
+  border-radius: 40px;
+  border: 3px solid;
   vertical-align: middle; //세로로 가운데
   position: relative;
   font-size: 14px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 600;
-  border-radius: 40px;
-  border: 3px solid;
+
 }
 
 
