@@ -6519,18 +6519,6 @@ a.button {
 
 //button winona
 
-.bg-1 .button {
-  color: #37474f;
-  border-color: #37474f;
-}
-
-/* Box colors */
-.bg-1 {
-  background: #ECEFF1;
-  color: #37474f;
-}
-
-
 /* Common button styles */
 button.button {
 /*float: left;*/
@@ -6541,7 +6529,9 @@ button.button {
   padding: 1em 2em;
   border: none;
   background: none;
-  color: inherit; //부모객체의 색깔 그대로
+  //color: inherit; //부모객체의 색깔 그대로
+    color: #37474f;
+  border-color: #37474f;
   vertical-align: middle; //세로로 가운데
   position: relative;
   z-index: 1; //요소를 겹치게 놓을 수 있음
@@ -6555,12 +6545,6 @@ button.button > span {
   vertical-align: middle;
 }
 
-/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari)
-.bg-1 .button {
-  color: #37474f;
-  border-color: #37474f;
-}
- */
 
 /* Sizes */
 button.button--size-s {
