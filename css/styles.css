@@ -6516,9 +6516,8 @@ a.button {
 
 
 
-
+///////////////////////////////////////////////////////////////////
 //button winona
-
 /* Common button styles */
 button.button {
 /*float: left;*/
@@ -6529,12 +6528,11 @@ button.button {
   padding: 1em 1em;
   border: none;
   background: none;
-  //color: inherit; //부모객체의 색깔 그대로
-    color: #37474f;
+  color: inherit; //부모객체의 색깔 그대로
   border-color: #37474f;
   vertical-align: middle; //세로로 가운데
   position: relative;
-  //z-index: 1; //요소를 겹치게 놓을 수 있음
+  z-index: 1; //요소를 겹치게 놓을 수 있음
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -6590,7 +6588,7 @@ button.button--winona::after {
   //top: 0;
   left: 0;
   opacity: 0;
-  color: #3f51b5;
+  color: #3f51b5; //진한거 글자랑 border
   -webkit-transform: translate3d(0, 25%, 0);
   transform: translate3d(0, 25%, 0);
 }
@@ -6598,7 +6596,7 @@ button.button--winona > span {
   display: block;
 }
 button.button--winona.button--inverted {
-  color: #7986cb;
+  color: #7986cb; //배경색...
 }
 button.button--winona.button--inverted:after {
   color: #fff;
