@@ -6582,7 +6582,8 @@ button.button--winona {
 }
 button.button--winona::after {
   content: attr(data-text);
-  position: absolute;
+  //position: absolute;
+  position: reletive;
   width: 100%;
   height: 100%;
   top: 0;
