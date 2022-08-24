@@ -6527,8 +6527,8 @@ a.button {
   padding: 1em 2em;
   border: none;
   background: none;
-  color: inherit; //부모객체의 색깔 그대로
-  border-color: inherit;
+  color: #392f31; //부모객체의 색깔 그대로
+  border-color: #392f31;
   vertical-align: middle; //세로로 가운데
   position: relative;
   font-size: 14px;
