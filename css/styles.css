@@ -6519,114 +6519,24 @@ a.button {
 ///////////////////////////////////////////////////////////////////
 //button winona
 /* Common button styles */
-button.button {
-/*float: left;*/
+button.button--winona {
   min-width: 150px;
   max-width: 350px;
   display: block;
   margin: 1em;
-  padding: 1em 1em;
+  padding: 1em 2em;
   border: none;
   background: none;
   color: inherit; //부모객체의 색깔 그대로
-  border-color: #37474f;
+  border-color: inherit;
   vertical-align: middle; //세로로 가운데
   position: relative;
-  z-index: 1; //요소를 겹치게 놓을 수 있음
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-button.button:focus {
-  outline: none;
-}
-button.button > span {
-  vertical-align: middle;
-}
-
-
-/* Sizes */
-button.button--size-s {
   font-size: 14px;
-}
-
-
-/* Typography and Roundedness */
-button.button--text-upper {
   letter-spacing: 2px;
   text-transform: uppercase;
-}
-
-button.button--text-thick {
   font-weight: 600;
-}
-
-button.button--round-l {
   border-radius: 40px;
-}
-
-/* Borders */
-button.button--border-thick {
   border: 3px solid;
-}
-
-/* Individual button styles */
-
-/* Winona */
-button.button--winona {
-  overflow: hidden;
-  padding: 0;
-  -webkit-transition: border-color 0.3s, background-color 0.3s;
-  transition: border-color 0.3s, background-color 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-button.button--winona::after {
-  content: attr(data-text);
-  //position: absolute;
-  position: reletive;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  color: #3f51b5; //진한거 글자랑 border
-  -webkit-transform: translate3d(0, 25%, 0);
-  transform: translate3d(0, 25%, 0);
-}
-button.button--winona > span {
-  display: block;
-}
-button.button--winona.button--inverted {
-  color: #7986cb; //배경색...
-}
-button.button--winona.button--inverted:after {
-  color: #fff;
-}
-button.button--winona::after,
-button.button--winona > span {
-  padding: 1em 2em;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-button.button--winona:hover {
-  border-color: #3f51b5;
-  background-color: rgba(63, 81, 181, 0.1);
-}
-button.button--winona.button--inverted:hover {
-  border-color: #21333C;
-  background-color: #21333C;
-}
-button.button--winona:hover::after {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-button.button--winona:hover > span {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -25%, 0);
-  transform: translate3d(0, -25%, 0);
 }
 
 
