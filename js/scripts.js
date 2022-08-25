@@ -222,8 +222,7 @@ $( 'button.callmember' ).click( function() {
         // Recalculate documentHeight and documentWidth on browser resize.
         $(window).resize(function () {
             documentHeight = $(document).height();
-           // documentWidth = $(document).width();
-		documentWidth = "430px";
+           documentWidth = $(document).width();
         });
 
         // Finally: Start adding petals.
