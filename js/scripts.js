@@ -157,7 +157,7 @@ $( 'button.callmember' ).click( function() {
             //fallSpeed: 3,
 	    fallSpeed: 4,
             maxSize: 15,
-            minSize: 11,
+            minSize: 10,
             newOn: 1400,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
 	//swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5']
