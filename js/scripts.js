@@ -151,7 +151,7 @@ $( 'button.callmember' ).click( function() {
         // Defaults for the option object, which gets extended below.
         var defaults = {
             //blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
-		blowAnimations: [ 'blow-soft-left','blow-soft-right', 'blow-medium-right'],
+		blowAnimations: [ 'blow-soft-left', 'blow-medium-left','blow-hard-left', 'blow-soft-right'],
             className: 'sakura',
             //fallSpeed: 3,
 	    fallSpeed: 0.8,
