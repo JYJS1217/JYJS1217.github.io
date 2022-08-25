@@ -214,15 +214,16 @@ $( 'button.callmember' ).click( function() {
                     'margin-top': startPosTop,
                     width: size
                 })
-               // .appendTo('body');
-		.appendTo('div.realsection');
+               .appendTo('body');
+		//.appendTo('div.realsection');
         };
 
 
         // Recalculate documentHeight and documentWidth on browser resize.
         $(window).resize(function () {
             documentHeight = $(document).height();
-            documentWidth = $(document).width();
+           // documentWidth = $(document).width();
+		documentWidth = "430px";
         });
 
         // Finally: Start adding petals.
