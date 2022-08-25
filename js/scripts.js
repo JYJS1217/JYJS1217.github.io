@@ -155,7 +155,7 @@ $( 'button.callmember' ).click( function() {
 		blowAnimations: [ 'blow-soft-left', 'blow-medium-left'],
             className: 'sakura',
             //fallSpeed: 3,
-	    fallSpeed: 0.7,
+	    fallSpeed: 2,
             maxSize: 15,
             minSize: 9,
             newOn: 1100,
