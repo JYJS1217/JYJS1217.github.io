@@ -6529,7 +6529,7 @@ a.button {
     }
     100% {
         opacity: 0.2;
-        top: 10%
+        top: 45%
     }
 }
 
@@ -6540,7 +6540,7 @@ a.button {
     }
     100% {
         opacity: 0.2;
-        top: 50%
+        top: 45%
     }
 }
 
@@ -6551,7 +6551,7 @@ a.button {
     }
     100% {
         opacity: 0.2;
-        top: 50%
+        top: 45%
     }
 }
 
@@ -6562,7 +6562,7 @@ a.button {
     }
     100% {
         opacity: 0.2;
-        top: 50%
+        top: 45%
     }
 }
 @keyframes fall {
@@ -6572,7 +6572,7 @@ a.button {
     }
     100% {
         opacity: 0.2;
-        top: 50%
+        top: 45%
     }
 }
 
