@@ -154,12 +154,12 @@ $( 'button.callmember' ).click( function() {
 		blowAnimations: [ 'blow-soft-left', 'blow-medium-left'],
             className: 'sakura',
             //fallSpeed: 3,
-	    fallSpeed: 0.8,
-            maxSize: 16,
+	    fallSpeed: 0.7,
+            maxSize: 15,
             minSize: 9,
-            newOn: 900,
-           // swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
-	swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5']
+            newOn: 1100,
+            swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
+	//swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5']
         };
 
         var options = $.extend({}, defaults, options);
