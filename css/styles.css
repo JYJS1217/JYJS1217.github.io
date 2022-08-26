@@ -6233,6 +6233,7 @@ body {
   padding-top: 2rem;
 }
 .about-section p {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
   margin-bottom: 5rem;
   line-height : 1.5rem;
 }
@@ -6266,6 +6267,8 @@ body {
   color : #392f31;
   line-height : 1.5rem;
 }
+
+
 
 .projects-section {
  width: 80%;
