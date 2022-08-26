@@ -6239,7 +6239,7 @@ body {
   max-width: 20rem;
   //font-size: 1rem;
   font-size: 1.5rem;
-  letter-spacing: 1rem;
+  letter-spacing: 0rem;
   color : #392f31;
   line-height : 1.8rem;
 }
