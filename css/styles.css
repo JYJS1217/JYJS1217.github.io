@@ -4246,12 +4246,14 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
   width: 15%;
+  width: 20%;
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
-  border: 0;
-  opacity: 0.5;
+  border: 1;
+  border-color : #000
+  //opacity: 0.5;   ///20220905
   transition: opacity 0.15s ease;
 }
 @media (prefers-reduced-motion: reduce) {
