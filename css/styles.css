@@ -4245,13 +4245,13 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15%;
+ // width: 15%;
   width: 20%;
   padding: 0;
   color: #fff;
   text-align: center;
   background: none;
-  border: 1;
+  border: 2;
   border-color : #000
   //opacity: 0.5;   ///20220905
   transition: opacity 0.15s ease;
@@ -4268,7 +4268,7 @@ textarea.form-control-lg {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: 0.9;
+  //opacity: 0.9;
 }
 
 .carousel-control-prev {
@@ -4282,8 +4282,10 @@ textarea.form-control-lg {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+//  width: 2rem;
+//  height: 2rem;
+    width: 4rem;
+  height: 4rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
