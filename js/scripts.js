@@ -72,7 +72,13 @@ window.addEventListener('DOMContentLoaded', event => {
     if (result !=0) {document.getElementById("count").innerHTML= "D-" +result;} ;
 
     
-	
+
+//이미지 슬라이더
+new Swiper('.container', 
+	   {   pagination: '.swiper-pagination',   
+	    paginationClickable: true,   
+	    spaceBetween:0,   
+	    loop: true,});	
 
 	
 $( 'a.groom' ).click( function() {
@@ -95,14 +101,6 @@ $( 'button.callmember' ).click( function() {
     
     
 });
-
-
-//이미지 슬라이더
-new Swiper('.container', 
-	   {   pagination: '.swiper-pagination',   
-	    paginationClickable: true,   
-	    spaceBetween:0,   
-	    loop: true,});
 
 
   // Sakura function.	
