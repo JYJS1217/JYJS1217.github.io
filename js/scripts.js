@@ -78,7 +78,7 @@ let curPos = 0;
 let postion = 0;
 let start_x, end_x;
 const IMAGE_WIDTH = 375;
-const images = document.querySelector(".swiper-slide") 
+const images = document.querySelector("a.swiper-slide") 
  
 images.addEventListener('touchstart', touch_start);
 images.addEventListener('touchend', touch_end);
