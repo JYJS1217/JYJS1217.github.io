@@ -71,7 +71,54 @@ window.addEventListener('DOMContentLoaded', event => {
     if (result ==0 ) {document.getElementById("count").innerHTML= "D-day";};
     if (result !=0) {document.getElementById("count").innerHTML= "D-" +result;} ;
 
-    
+   
+	
+	//img-fluid silde
+let curPos = 0;
+let postion = 0;
+let start_x, end_x;
+const IMAGE_WIDTH = 375;
+const images = document.querySelector(".swiper-slide") 
+ 
+images.addEventListener('touchstart', touch_start);
+images.addEventListener('touchend', touch_end);
+ 
+function prev(){
+  if(curPos > 0){
+    postion += IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos - 1;
+  }
+}
+function next(){
+  if(curPos < 3){
+    postion -= IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos + 1;
+  }
+}
+ 
+function touch_start(event) {
+  start_x = event.touches[0].pageX
+}
+ 
+function touch_end(event) {
+  end_x = event.changedTouches[0].pageX;
+  if(start_x > end_x){
+    next();
+  }else{
+    prev();
+  }
+}	
+//img-fluid silde	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 $( 'a.groom' ).click( function() {
 	$('h4.groom2').slideToggle();
@@ -93,6 +140,11 @@ $( 'button.callmember' ).click( function() {
     
     
 });
+
+
+
+
+
 
 
   // Sakura function.	
