@@ -6472,6 +6472,12 @@ text-align : center;
   text-align : center;
   -webkit-touch-callout:none;
 }
+#portfolio .portfolio-box .img-fluid{
+border-radius: 10px;
+padding : 3px;
+  pointer-events : none;
+  -webkit-touch-callout:none;
+}
 
 
 
