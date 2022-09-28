@@ -1,16 +1,9 @@
 @charset "UTF-8";
 
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #7464a1;
-  --bs-pink: #d63384;
-  --bs-red: #a16468;
-  --bs-orange: #fd7e14;
+
   --bs-yellow: #e4c662;
   --bs-green: #67c29c;
-  --bs-teal: #000;
-  --bs-cyan: #1cabc4;
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
@@ -7297,12 +7290,7 @@ a.button {
 }
 
 .sakura {
-//    background: -webkit-linear-gradient(120deg, rgba(255, 183, 197, 0.8), rgba(255, 197, 208, 0.9));
-//    background: -o-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
-//   background: -ms-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
-//   background: -moz-linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
-//    background: linear-gradient(120deg, rgba(255, 183, 197, 0.9), rgba(255, 197, 208, 0.9));
-  
+
       background: -webkit-linear-gradient(120deg, rgba(227, 255, 200, 0.8), rgba(255, 255, 228, 0.9));
     background: -o-linear-gradient(120deg, rgba(227, 255, 200, 0.9), rgba(255, 255, 228, 0.9));
    background: -ms-linear-gradient(120deg, rgba(227, 255, 200, 0.9), rgba(255, 255, 228, 0.9));
