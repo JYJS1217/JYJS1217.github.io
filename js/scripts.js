@@ -9,7 +9,7 @@
 
 
 
-
+$(window).load(
 
 window.addEventListener('DOMContentLoaded', event => {
  	AOS.init({duration: 1000});
@@ -238,3 +238,4 @@ $( 'button.callmember' ).click( function() {
 }(jQuery));
  
 
+);
